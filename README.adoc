@@ -2,3 +2,21 @@
 
 Example code for quickly understanding how JProfiler memory profiling works.
 
+
+== Usage
+
+. Start project and connect JProfiler with instrumentation
+. Go to "Telemetries", "Memory"
+. Create objects, _notice how memory usage increases_
+. Go to "Live Memory", "All Objects", _notice that 10,000,000 Double objects exist_
+. Run GC, _notice that objects cannot be collected_
+. Go to "Recorded Objects", _notice that nothing is shown until you start recording_
+. Release objects
+. Run GC, _notice that memory consumption decreases_
+. (JProfiler) Record objects
+. Create objects,_notice that 1,000,000 Double objects are created (1/10th of real amount, depending on JP settings)
+. Go to "Allocation Call Tree", _notice that nothing is shown until you calculate call tree"
+. Calculate call tree, _notice that call tree is based on already created objects_
+. Go to "Allocation Hot Spots", _notice that hot spots also have been calculated_
+. Release objects
+. Run GC, _notice that "Recorded Objects" is updated, while "Allocation Call Tree" and "Allocation Hot Spots" are not updated until you calculate again
