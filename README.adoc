@@ -1,0 +1,4 @@
+= JProfiler Memory Example
+
+Example code for quickly understanding how JProfiler memory profiling works.
+
