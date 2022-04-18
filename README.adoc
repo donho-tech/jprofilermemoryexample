@@ -22,6 +22,13 @@ Example code for quickly understanding how JProfiler memory profiling works.
 . Run GC, _notice that "Recorded Objects" is updated, while "Allocation Call Tree" and "Allocation Hot Spots" are not updated until you calculate again_
 
 
+== How to analyze high memory consumption
+
+* Play around with app and monitor memory usage
+* Record object allocation when memory usage is high
+* Calculate allocation call tree and hotspots
+
+
 == Further reading
 https://www.ej-technologies.com/resources/jprofiler/help/doc/main/memory.html
 https://www.baeldung.com/java-memory-leaks
